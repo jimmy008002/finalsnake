@@ -83,7 +83,8 @@ function control(){
   start_action=false;
   
 
-  if(poses[0].keypoints[10].x<150&&poses[0].keypoints[10].y<150&&poses[0].keypoints[10].score>0.7){mode=1}
+  if(poses[0].keypoints[10].x<150&&poses[0].keypoints[10].y<150&&poses[0].keypoints[10].score>0.4){mode=1}
+  console.log("ddd")
     // Detect up flap
     // (Note: I add 40 to the y so we don't have to flap as high)
 //     if (
